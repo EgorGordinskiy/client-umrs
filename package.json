@@ -8,14 +8,13 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "lint:fix": "ng lint --fix",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "husky"
   },
   "lint-staged": {
     "*.ts": [
       "npm run format",
-      "npm run lint:fix"
+      "npm run lint"
     ]
   },
   "private": true,
