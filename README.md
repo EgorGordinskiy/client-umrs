@@ -9,6 +9,7 @@ $ npm install
 Чтобы запустить локальный сервер разработки, запустите:
 
 ```bash
+sudo chown -R $(whoami):$(whoami) .
 ng serve
 ```
 
