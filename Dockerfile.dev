@@ -19,7 +19,7 @@ RUN set -xe \
 
 WORKDIR /app
 
-COPY package.json package-lock.json .npmrc ./
+COPY package.json package-lock.json ./
 RUN npm install && npm install -g @angular/cli@latest
 
 ENTRYPOINT [ "ng", "serve", "--host", "0.0.0.0" ]
